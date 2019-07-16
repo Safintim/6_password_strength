@@ -46,8 +46,8 @@ def is_special_symbols(password):
     return re.search(r'\W', password) is not None
 
 
-def is_length_more_n(password, n=8):
-    return len(password) > n
+def is_length_more_n(password, len_password=8):
+    return len(password) >= len_password
 
 
 if __name__ == '__main__':
