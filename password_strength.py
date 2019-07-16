@@ -23,7 +23,7 @@ def get_password_strength(password):
         is_special_symbols(password),
         is_length_more_n(password)
     ]
-    return requierements
+    return calculate_strength_password(requierements)
 
 
 def calculate_strength_password(requierements):
