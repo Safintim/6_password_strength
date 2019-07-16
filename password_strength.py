@@ -7,7 +7,7 @@ def main():
     namespace = parser.parse_args()
     if not namespace.password:
         exit('Укажите пароль')
-    print(get_password_strength(namespace.password))
+    print('Стойкость вашего пароля:', get_password_strength(namespace.password))
 
 
 def create_parser():
