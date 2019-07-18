@@ -1,16 +1,19 @@
 import argparse
+import getpass
 import re
 
 
 def main():
     parser = create_parser()
     namespace = parser.parse_args()
+    if not namespace.password:
+        namespace.password = getpass.getpass()
     print('Стойкость вашего пароля:', get_password_strength(namespace.password))
 
 
 def create_parser():
     parser = argparse.ArgumentParser(prefix_chars='-+/')
-    parser.add_argument('password', help='Password')
+    parser.add_argument('password', nargs='?', help='Password')
     return parser
 
 
