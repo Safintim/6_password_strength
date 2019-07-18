@@ -18,33 +18,33 @@
 ```sh
 git clone https://github.com/Safintim/6_password_strength.git
 cd 6_password_strength
-python 6_password_strength <password>
+python 6_password_strength.py <password>
 ```
 
 Если не желаете показывать пароль, то вызовите скрипт без аргументов:
 ```
-python 6_password_strength
+python 6_password_strength.py
 ```
 
 ## Примеры
 
 ```sh
-python 6_password_strength 123
+python 6_password_strength.py 123
 Стойкость вашего пароля: 2
 ```
 
 ```sh
-python 6_password_strength Ared47#fasd
+python 6_password_strength.py Ared47#fasd
 Стойкость вашего пароля: 10
 ```
 
 ```sh
-python 6_password_strength aredfs3d
+python 6_password_strength.py aredfs3d
 Стойкость вашего пароля: 5
 ```
 
 ```sh
-python 6_password_strength
+python 6_password_strength.py
 Password: 
 Стойкость вашего пароля: 5
 ```
