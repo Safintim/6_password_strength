@@ -5,14 +5,12 @@ import re
 def main():
     parser = create_parser()
     namespace = parser.parse_args()
-    if not namespace.password:
-        exit('Укажите пароль')
     print('Стойкость вашего пароля:', get_password_strength(namespace.password))
 
 
 def create_parser():
     parser = argparse.ArgumentParser(prefix_chars='-+/')
-    parser.add_argument('password', nargs='?', default=False, help='Password')
+    parser.add_argument('password', help='Password')
     return parser
 
 
