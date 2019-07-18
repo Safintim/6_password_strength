@@ -15,13 +15,13 @@ def create_parser():
 
 
 def get_password_strength(password):
-    requierements = [
+    requirements = [
         is_different_case(password),
         is_at_least_one_digit(password),
         is_special_symbols(password),
         is_length_more_n(password)
     ]
-    return calculate_strength_password(requierements)
+    return calculate_strength_password(requirements)
 
 
 def calculate_strength_password(requierements):
