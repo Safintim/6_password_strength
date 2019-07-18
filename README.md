@@ -21,6 +21,11 @@ cd 6_password_strength
 python 6_password_strength <password>
 ```
 
+Если не желаете, чтобы показывать пароль, то вызовите программу без аргументов:
+```
+python 6_password_strength
+```
+
 ## Примеры
 
 ```sh
@@ -35,6 +40,12 @@ python 6_password_strength Ared47#fasd
 
 ```sh
 python 6_password_strength aredfs3d
+Стойкость вашего пароля: 5
+```
+
+```sh
+python 6_password_strength
+Password: 
 Стойкость вашего пароля: 5
 ```
 
